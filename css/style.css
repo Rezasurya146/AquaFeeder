@@ -1,0 +1,315 @@
+/* Updated CSS */
+:root {
+  --primary: #1bcdea;
+  --bg: #010101;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(1, 1, 1, 0.8);
+  border-bottom: 1px solid #16adc4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+/* hero section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero .content {
+  padding: 1.4rem 7%;
+  max-width: 60rem;
+}
+
+.hero .content h1 {
+  font-size: 4em;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  line-height: 1.2;
+}
+
+.hero .content p {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  line-height: 1.4rem;
+  font-weight: 300;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.hero .content .cta {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+/* about section */
+.about,
+.ikan {
+  padding: 8rem 7% 1.4rem;
+}
+
+.about h2,
+.ikan h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.about h2 span,
+.ikan h2 span {
+  color: var(--primary);
+}
+
+.ikan p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-size: 1.4rem;
+  font-weight: 100;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.ikan .row,
+.about .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: left;
+  color: #fff;
+}
+
+.ikan .ikan-card {
+  text-align: center;
+  max-width: 80%;
+  padding-bottom: 4rem;
+}
+
+.ikan .row .ikan-card img {
+  width: 80%;
+  border: 10px;
+}
+/* blog */
+
+.blog-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 400px;
+}
+
+.about p {
+  text-align: left;
+  max-width: 60rem;
+  margin-bottom: 1em;
+  font-size: 1.4rem;
+  font-weight: 100;
+  line-height: 1.6;
+  color: #fff;
+}
+/* Jam Mulai */
+.container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.container {
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 800px;
+  height: 300px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 1rem;
+}
+
+.clock {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 0, 255, 0.11);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.time span {
+  font-size: 80px;
+  width: 110px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.time span::after {
+  font-size: 16px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.feed {
+  background-color: #6a5acd; /* Warna tombol Feed Now */
+  color: white;
+}
+
+.feed:hover {
+  background-color: #5b4dbb; /* Warna tombol Feed Now saat dihover */
+}
+
+.schedule {
+  background-color: #e0e0e0; /* Warna tombol Schedule */
+  color: #333;
+}
+
+.schedule:hover {
+  background-color: #d5d5d5; /* Warna tombol Schedule saat dihover */
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 3rem;
+}
+
+footer .social {
+  padding: 1rem 0;
+}
+
+footer .social a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .social a:hover {
+  color: var(--bg);
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+
+footer .links a:hover {
+  color: var(--bg);
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit a {
+  color: var(--bg);
+  font-weight: 700;
+}
+
+/* media Queries */
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+/* HP */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
